@@ -24,7 +24,7 @@ extension WeakView {
             print("currentDay   - \(currentDay)")
             
             //получаем день по используемому индексу
-            let day = Calendar.current.component(.day, from: currentDay)
+            let day = Date.calendar.component(.day, from: currentDay)
             print("day   - \(day)")
             
             //узнаем равен ли текущий день и день который отрисовываем с использованием индекса

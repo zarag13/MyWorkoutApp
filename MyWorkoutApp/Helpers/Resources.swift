@@ -49,6 +49,15 @@ enum Resources {
             static var settings = "Settings"
         }
         
+        enum Session {
+            static let navBarStart = "Start   "
+            static let navBarPause = "Pause"
+            static let navBarStop = "Stop"
+            
+            static let elapsedTime = "Elapsed Time"
+            static let remainingTime = "Remaining Time"
+        }
+        
         enum Overview {
             static var allWorcoutsButton = "All Workouts"
         }

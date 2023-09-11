@@ -9,7 +9,7 @@ import UIKit
 
 final class WeakView: BaseView {
     //календарь - текущий
-    private let calendar = Calendar.current
+    private let calendar = Date.calendar
     private var stackView = UIStackView()
 }
 
@@ -37,7 +37,7 @@ extension WeakView {
         //получаем текущую неделю - с названиями недели в сокращенном формате (3 буквы)
         var weakdays = calendar.shortStandaloneWeekdaySymbols
         //достаем первый день недели
-        if calendar.firstWeekday == 1 {
+        if calendar.firstWeekday == 2 {
             //удаляем его
             let sun = weakdays.remove(at: 0)
             //добавляем в конец
